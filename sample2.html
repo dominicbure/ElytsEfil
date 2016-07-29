@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+  <script>
+$(document).ready(function(){
+    $(function() {
+
+    function refreshSwatch() {
+      var yellow = $("#yellow").slider("value");
+      var alpha = yellow / 255;
+      $("#swatch").css("background-color", "rgba(255, 255, 0, " + alpha + ");");
+    }
+
+    $("#yellow").slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127,
+      slide: refreshSwatch,
+      change: refreshSwatch
+    });
+    $("#yellow").slider("value", 255);
+  });
+});
+</script>
+</head>
+ <style type="text/css">
+   #yellow {
+   float: left;
+   clear: left;
+   width: 300px;
+   margin: 15px;
+ }
+ 
+ /*code for square*/
+ #swatch {
+   width: 120px;
+   height: 100px;
+   margin-top: 18px;
+   margin-left: 350px;
+ }
+ 
+ 
+ 
+ #yellow .ui-slider-range {
+   background: yellow;
+ }
+ 
+ #yellow .ui-slider-handle {
+   border-color: green;
+ }
+
+ </style>
+<body class="ui-widget-content" style="border:0;">
+
+  <div id="yellow"></div>
+
+  <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+
+</body>
+</html>

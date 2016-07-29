@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+  </head>
+  <style type="text/css">
+  #yellow {
+   float: left;
+   clear: left;
+   width: 300px;
+   margin: 15px;
+ }
+ 
+ #swatch {
+   width: 120px;
+   height: 100px;
+   margin-top: 18px;
+   margin-left: 350px;
+ }
+ 
+ 
+ 
+ #yellow .ui-slider-range {
+   background: green;
+ }
+ 
+ #yellow .ui-slider-handle {
+   border-color: yellow;
+ }
+
+  </style>
+   <body class="ui-widget-content" style="border:0;">
+   <h1>Hello</h1>
+
+    <div class="container">
+   
+
+  <div id="yellow"></div>
+
+  <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+ 
+
+
+<!--   <script>
+  function() {
+
+    function refreshSwatch() {
+      var yellow = $("#yellow").slider("value");
+      var alpha = yellow / 255;
+      $("#swatch").css("background-color", "rgba(255, 255, 0, " + alpha + ");");
+    }
+
+    $("#yellow").slider({
+      orientation: "horizontal",
+      range: "min",
+      max: 255,
+      value: 127,
+      slide: refreshSwatch,
+      change: refreshSwatch
+    });
+    $("#yellow").slider("value", 0);
+  };
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+ --> 
+ <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+</body>
+
+    
+   
+</html>
